@@ -33,4 +33,20 @@ func main() {
 	arr8 := [...]int{1, 2, 3, 4, 5, 6}
 	fmt.Println(len(arr8))
 
+	var a [5]int
+	fmt.Println("a: ", a)
+	var twoD [2][3]int
+	for i := range 2 {
+		for j := range 3 {
+			twoD[i][j] = i + j
+		}
+	}
+	fmt.Println("twoD: ", twoD)
+
+	twoD1 := [2][3]int{
+		{1, 2, 3},
+		{4, 5, 6},
+	}
+	fmt.Println("twoD1: ", twoD1)
+
 }
